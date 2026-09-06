@@ -1,0 +1,83 @@
+site_name: "Desarrollo Cloud-Native I"
+site_description: >-
+  En este curso nos introduciremos en el desarrollo **Cloud Native**,
+  aprendiendo a diseñar, integrar y desplegar aplicaciones modernas basadas
+  en servicios distribuidos. Exploraremos la gestión y seguridad de APIs, la
+  comunicación mediante mensajería asíncrona y el procesamiento de datos
+  mediante streaming, combinando conceptos y tecnologías ampliamente utilizadas
+  en la industria para comprender no solo cómo funcionan, sino también cuándo y
+  por qué utilizarlas.
+site_url: https://jmcandia.github.io/desarrollo-cloud-native/
+
+repo_url: https://github.com/jmcandia/desarrollo-cloud-native
+repo_name: GitHub
+
+theme:
+  name: material
+  language: es
+  favicon: assets/images/favicon.png
+  logo: assets/images/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+plugins:
+  - search:
+      lang: es
+  - callouts
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Inicio: index.md
+  - "Capítulo 1: Configurando API Manager e Identity as a Service":
+      - content/chapter01/index.md
+  - "Capítulo 2: Desarrollando soluciones con colas de mensajes":
+      - content/chapter02/index.md
+  - "Capítulo 3: Desarrollando soluciones con streaming de datos":
+      - content/chapter03/index.md

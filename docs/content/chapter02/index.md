@@ -1,0 +1,3 @@
+# Capítulo 2: Desarrollando soluciones con colas de mensajes
+
+En este capítulo aprenderemos cómo nuestros servicios pueden comunicarse de manera **asíncrona**, sin necesidad de esperar una respuesta inmediata. Conoceremos el funcionamiento de las **colas de mensajes**, exploraremos el rol de productores y consumidores, y veremos cómo este modelo nos permite desacoplar componentes, distribuir cargas de trabajo y construir sistemas más escalables y resilientes. A través de ejemplos prácticos, aplicaremos estos conceptos para resolver problemas de comunicación habituales en sistemas distribuidos.
