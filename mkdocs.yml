@@ -77,6 +77,10 @@ nav:
   - Inicio: index.md
   - "Capítulo 1: Configurando API Manager e Identity as a Service":
       - content/chapter01/index.md
+      - "Conociendo un API Manager": content/chapter01/getting-to-know-an-api-manager.md
+      - "Tutorial: Creando mi primer API Manager": content/chapter01/creating-my-first-api-manager.md
+      - "Versionando APIs": content/chapter01/api-versioning.md
+      - "CORS: compartiendo APIs entre orígenes": content/chapter01/cors.md
   - "Capítulo 2: Desarrollando soluciones con colas de mensajes":
       - content/chapter02/index.md
   - "Capítulo 3: Desarrollando soluciones con streaming de datos":
